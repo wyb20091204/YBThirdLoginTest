@@ -7,7 +7,15 @@
 //
 
 #import "AppDelegate+QQ.h"
-#define kQQAppID @"1106118074"
 @implementation AppDelegate (QQ)
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    return [TencentOAuth HandleOpenURL:url];
+}
+
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url{
+    return [TencentOAuth HandleOpenURL:url];
+}
 
 @end

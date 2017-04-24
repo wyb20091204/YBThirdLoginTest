@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import <TencentOpenAPI/TencentOAuth.h>
+#define kQQAppID @"1106118074"
 @interface AppDelegate (QQ)
 
 @end
