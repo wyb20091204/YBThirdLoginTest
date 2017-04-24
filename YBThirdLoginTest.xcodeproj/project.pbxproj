@@ -24,6 +24,7 @@
 		1AA5AE911EADA5E90049E6C9 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA5AE901EADA5E90049E6C9 /* libstdc++.tbd */; };
 		1AA5AE931EADA5FE0049E6C9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA5AE921EADA5FE0049E6C9 /* CoreGraphics.framework */; };
 		1AA5AE951EADA60B0049E6C9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA5AE941EADA60B0049E6C9 /* libz.tbd */; };
+		1AF1BFF61EADCC74003DDB1D /* AppDelegate+WeiXin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF1BFF51EADCC74003DDB1D /* AppDelegate+WeiXin.m */; };
 		5B9C50723C003D3B3E03CE8E /* libPods-YBThirdLoginTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A78FA0A85C7A3CBF19DEEC89 /* libPods-YBThirdLoginTest.a */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,8 @@
 		1AA5AE901EADA5E90049E6C9 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		1AA5AE921EADA5FE0049E6C9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1AA5AE941EADA60B0049E6C9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		1AF1BFF41EADCC74003DDB1D /* AppDelegate+WeiXin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+WeiXin.h"; sourceTree = "<group>"; };
+		1AF1BFF51EADCC74003DDB1D /* AppDelegate+WeiXin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+WeiXin.m"; sourceTree = "<group>"; };
 		7D1A8FFC10A1A64A67FCAD4D /* Pods-YBThirdLoginTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBThirdLoginTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YBThirdLoginTest/Pods-YBThirdLoginTest.debug.xcconfig"; sourceTree = "<group>"; };
 		A78FA0A85C7A3CBF19DEEC89 /* libPods-YBThirdLoginTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YBThirdLoginTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A90B1BA5DFD8BE234049E9D2 /* Pods-YBThirdLoginTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBThirdLoginTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-YBThirdLoginTest/Pods-YBThirdLoginTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +121,8 @@
 				1AA5AE6B1EAD9B190049E6C9 /* AppDelegate.m */,
 				1AA5AE7E1EAD9D2F0049E6C9 /* AppDelegate+QQ.h */,
 				1AA5AE7F1EAD9D2F0049E6C9 /* AppDelegate+QQ.m */,
+				1AF1BFF41EADCC74003DDB1D /* AppDelegate+WeiXin.h */,
+				1AF1BFF51EADCC74003DDB1D /* AppDelegate+WeiXin.m */,
 				1AA5AE6D1EAD9B190049E6C9 /* ViewController.h */,
 				1AA5AE6E1EAD9B190049E6C9 /* ViewController.m */,
 				1AA5AE701EAD9B190049E6C9 /* Main.storyboard */,
@@ -281,6 +286,7 @@
 			files = (
 				1AA5AE801EAD9D2F0049E6C9 /* AppDelegate+QQ.m in Sources */,
 				1AA5AE6F1EAD9B190049E6C9 /* ViewController.m in Sources */,
+				1AF1BFF61EADCC74003DDB1D /* AppDelegate+WeiXin.m in Sources */,
 				1AA5AE6C1EAD9B190049E6C9 /* AppDelegate.m in Sources */,
 				1AA5AE691EAD9B190049E6C9 /* main.m in Sources */,
 			);

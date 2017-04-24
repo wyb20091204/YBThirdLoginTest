@@ -81,11 +81,18 @@
                                 <rect key="frame" x="289" y="219" width="50" height="50"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择其他方式登录：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wg8-4U-5rU">
+                                <rect key="frame" x="45" y="51" width="156" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="4e7-Me-T6i" firstAttribute="width" secondItem="rrL-ug-B4b" secondAttribute="width" id="8CT-6y-Mdg"/>
                             <constraint firstItem="1ZK-vE-4cj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="29" id="DEo-Nw-u90"/>
+                            <constraint firstItem="1ZK-vE-4cj" firstAttribute="leading" secondItem="wg8-4U-5rU" secondAttribute="leading" id="DHt-6V-7rv"/>
                             <constraint firstItem="nK9-KY-U5k" firstAttribute="centerY" secondItem="h87-ep-Cl6" secondAttribute="centerY" id="DjS-34-TR0"/>
                             <constraint firstItem="4e7-Me-T6i" firstAttribute="leading" secondItem="1ZK-vE-4cj" secondAttribute="leading" id="Ek4-rr-o68"/>
                             <constraint firstItem="nK9-KY-U5k" firstAttribute="width" secondItem="nD1-S6-gbi" secondAttribute="width" id="F0A-JD-WbL"/>
@@ -100,6 +107,7 @@
                             <constraint firstItem="bjv-8P-7Hs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U6I-TV-JQ5"/>
                             <constraint firstItem="9fs-jq-rV1" firstAttribute="trailing" secondItem="nD1-S6-gbi" secondAttribute="trailing" id="ZkO-od-Knq"/>
                             <constraint firstItem="9fs-jq-rV1" firstAttribute="centerY" secondItem="87Z-Ke-AhP" secondAttribute="centerY" id="b13-0E-90K"/>
+                            <constraint firstItem="1ZK-vE-4cj" firstAttribute="top" secondItem="wg8-4U-5rU" secondAttribute="bottom" constant="20" id="bDo-oe-8Fn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nD1-S6-gbi" secondAttribute="trailing" constant="20" id="bdV-C8-BsV"/>
                             <constraint firstItem="nD1-S6-gbi" firstAttribute="centerY" secondItem="bjv-8P-7Hs" secondAttribute="centerY" id="cjT-ip-gbB"/>
                             <constraint firstItem="9fs-jq-rV1" firstAttribute="width" secondItem="nD1-S6-gbi" secondAttribute="width" id="faG-X9-etQ"/>
