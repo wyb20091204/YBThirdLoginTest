@@ -14,6 +14,8 @@
 		1AA5AE741EAD9B190049E6C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AA5AE731EAD9B190049E6C9 /* Assets.xcassets */; };
 		1AA5AE771EAD9B190049E6C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AA5AE751EAD9B190049E6C9 /* LaunchScreen.storyboard */; };
 		1AA5AE801EAD9D2F0049E6C9 /* AppDelegate+QQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA5AE7F1EAD9D2F0049E6C9 /* AppDelegate+QQ.m */; };
+		1AA5AE841EADA0530049E6C9 /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1AA5AE821EADA0530049E6C9 /* TencentOpenApi_IOS_Bundle.bundle */; };
+		1AA5AE851EADA0530049E6C9 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA5AE831EADA0530049E6C9 /* TencentOpenAPI.framework */; };
 		5B9C50723C003D3B3E03CE8E /* libPods-YBThirdLoginTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A78FA0A85C7A3CBF19DEEC89 /* libPods-YBThirdLoginTest.a */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +32,8 @@
 		1AA5AE781EAD9B190049E6C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AA5AE7E1EAD9D2F0049E6C9 /* AppDelegate+QQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+QQ.h"; sourceTree = "<group>"; };
 		1AA5AE7F1EAD9D2F0049E6C9 /* AppDelegate+QQ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+QQ.m"; sourceTree = "<group>"; };
+		1AA5AE821EADA0530049E6C9 /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
+		1AA5AE831EADA0530049E6C9 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
 		7D1A8FFC10A1A64A67FCAD4D /* Pods-YBThirdLoginTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBThirdLoginTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YBThirdLoginTest/Pods-YBThirdLoginTest.debug.xcconfig"; sourceTree = "<group>"; };
 		A78FA0A85C7A3CBF19DEEC89 /* libPods-YBThirdLoginTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YBThirdLoginTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A90B1BA5DFD8BE234049E9D2 /* Pods-YBThirdLoginTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBThirdLoginTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-YBThirdLoginTest/Pods-YBThirdLoginTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -41,6 +45,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B9C50723C003D3B3E03CE8E /* libPods-YBThirdLoginTest.a in Frameworks */,
+				1AA5AE851EADA0530049E6C9 /* TencentOpenAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,7 @@
 		1AA5AE661EAD9B190049E6C9 /* YBThirdLoginTest */ = {
 			isa = PBXGroup;
 			children = (
+				1AA5AE811EADA03E0049E6C9 /* ThirdSDK */,
 				1AA5AE6A1EAD9B190049E6C9 /* AppDelegate.h */,
 				1AA5AE6B1EAD9B190049E6C9 /* AppDelegate.m */,
 				1AA5AE7E1EAD9D2F0049E6C9 /* AppDelegate+QQ.h */,
@@ -97,6 +103,15 @@
 				1AA5AE681EAD9B190049E6C9 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1AA5AE811EADA03E0049E6C9 /* ThirdSDK */ = {
+			isa = PBXGroup;
+			children = (
+				1AA5AE821EADA0530049E6C9 /* TencentOpenApi_IOS_Bundle.bundle */,
+				1AA5AE831EADA0530049E6C9 /* TencentOpenAPI.framework */,
+			);
+			path = ThirdSDK;
 			sourceTree = "<group>";
 		};
 		F751ED518B4297A7286903CD /* Pods */ = {
@@ -170,6 +185,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AA5AE841EADA0530049E6C9 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				1AA5AE771EAD9B190049E6C9 /* LaunchScreen.storyboard in Resources */,
 				1AA5AE741EAD9B190049E6C9 /* Assets.xcassets in Resources */,
 				1AA5AE721EAD9B190049E6C9 /* Main.storyboard in Resources */,
@@ -358,6 +374,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4X428NXEP5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YBThirdLoginTest/ThirdSDK",
+				);
 				INFOPLIST_FILE = YBThirdLoginTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiahenghealth.YBThirdLoginTest;
@@ -371,6 +391,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4X428NXEP5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YBThirdLoginTest/ThirdSDK",
+				);
 				INFOPLIST_FILE = YBThirdLoginTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiahenghealth.YBThirdLoginTest;
