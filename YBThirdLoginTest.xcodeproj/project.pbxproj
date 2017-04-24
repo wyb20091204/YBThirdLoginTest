@@ -16,6 +16,14 @@
 		1AA5AE801EAD9D2F0049E6C9 /* AppDelegate+QQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA5AE7F1EAD9D2F0049E6C9 /* AppDelegate+QQ.m */; };
 		1AA5AE841EADA0530049E6C9 /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1AA5AE821EADA0530049E6C9 /* TencentOpenApi_IOS_Bundle.bundle */; };
 		1AA5AE851EADA0530049E6C9 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA5AE831EADA0530049E6C9 /* TencentOpenAPI.framework */; };
+		1AA5AE871EADA4C60049E6C9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA5AE861EADA4C60049E6C9 /* Security.framework */; };
+		1AA5AE891EADA57C0049E6C9 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA5AE881EADA57C0049E6C9 /* libiconv.tbd */; };
+		1AA5AE8B1EADA58B0049E6C9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA5AE8A1EADA58B0049E6C9 /* SystemConfiguration.framework */; };
+		1AA5AE8D1EADA5C00049E6C9 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA5AE8C1EADA5C00049E6C9 /* libsqlite3.tbd */; };
+		1AA5AE8F1EADA5D30049E6C9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA5AE8E1EADA5D30049E6C9 /* CoreTelephony.framework */; };
+		1AA5AE911EADA5E90049E6C9 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA5AE901EADA5E90049E6C9 /* libstdc++.tbd */; };
+		1AA5AE931EADA5FE0049E6C9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA5AE921EADA5FE0049E6C9 /* CoreGraphics.framework */; };
+		1AA5AE951EADA60B0049E6C9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA5AE941EADA60B0049E6C9 /* libz.tbd */; };
 		5B9C50723C003D3B3E03CE8E /* libPods-YBThirdLoginTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A78FA0A85C7A3CBF19DEEC89 /* libPods-YBThirdLoginTest.a */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +42,14 @@
 		1AA5AE7F1EAD9D2F0049E6C9 /* AppDelegate+QQ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+QQ.m"; sourceTree = "<group>"; };
 		1AA5AE821EADA0530049E6C9 /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
 		1AA5AE831EADA0530049E6C9 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		1AA5AE861EADA4C60049E6C9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1AA5AE881EADA57C0049E6C9 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		1AA5AE8A1EADA58B0049E6C9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1AA5AE8C1EADA5C00049E6C9 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		1AA5AE8E1EADA5D30049E6C9 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		1AA5AE901EADA5E90049E6C9 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		1AA5AE921EADA5FE0049E6C9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1AA5AE941EADA60B0049E6C9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		7D1A8FFC10A1A64A67FCAD4D /* Pods-YBThirdLoginTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBThirdLoginTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YBThirdLoginTest/Pods-YBThirdLoginTest.debug.xcconfig"; sourceTree = "<group>"; };
 		A78FA0A85C7A3CBF19DEEC89 /* libPods-YBThirdLoginTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YBThirdLoginTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A90B1BA5DFD8BE234049E9D2 /* Pods-YBThirdLoginTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBThirdLoginTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-YBThirdLoginTest/Pods-YBThirdLoginTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -44,6 +60,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AA5AE951EADA60B0049E6C9 /* libz.tbd in Frameworks */,
+				1AA5AE931EADA5FE0049E6C9 /* CoreGraphics.framework in Frameworks */,
+				1AA5AE911EADA5E90049E6C9 /* libstdc++.tbd in Frameworks */,
+				1AA5AE8F1EADA5D30049E6C9 /* CoreTelephony.framework in Frameworks */,
+				1AA5AE8D1EADA5C00049E6C9 /* libsqlite3.tbd in Frameworks */,
+				1AA5AE8B1EADA58B0049E6C9 /* SystemConfiguration.framework in Frameworks */,
+				1AA5AE891EADA57C0049E6C9 /* libiconv.tbd in Frameworks */,
+				1AA5AE871EADA4C60049E6C9 /* Security.framework in Frameworks */,
 				5B9C50723C003D3B3E03CE8E /* libPods-YBThirdLoginTest.a in Frameworks */,
 				1AA5AE851EADA0530049E6C9 /* TencentOpenAPI.framework in Frameworks */,
 			);
@@ -55,6 +79,14 @@
 		11C0AE5C288036E84B947FA3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1AA5AE941EADA60B0049E6C9 /* libz.tbd */,
+				1AA5AE921EADA5FE0049E6C9 /* CoreGraphics.framework */,
+				1AA5AE901EADA5E90049E6C9 /* libstdc++.tbd */,
+				1AA5AE8E1EADA5D30049E6C9 /* CoreTelephony.framework */,
+				1AA5AE8C1EADA5C00049E6C9 /* libsqlite3.tbd */,
+				1AA5AE8A1EADA58B0049E6C9 /* SystemConfiguration.framework */,
+				1AA5AE881EADA57C0049E6C9 /* libiconv.tbd */,
+				1AA5AE861EADA4C60049E6C9 /* Security.framework */,
 				A78FA0A85C7A3CBF19DEEC89 /* libPods-YBThirdLoginTest.a */,
 			);
 			name = Frameworks;
@@ -381,6 +413,23 @@
 				INFOPLIST_FILE = YBThirdLoginTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"SDWebImage\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-fobjc-arc",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiahenghealth.YBTencentLoginTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -399,6 +448,23 @@
 				INFOPLIST_FILE = YBThirdLoginTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"SDWebImage\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-fobjc-arc",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiahenghealth.YBTencentLoginTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
