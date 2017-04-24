@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AA5AE691EAD9B190049E6C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA5AE681EAD9B190049E6C9 /* main.m */; };
+		1AA5AE6C1EAD9B190049E6C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA5AE6B1EAD9B190049E6C9 /* AppDelegate.m */; };
+		1AA5AE6F1EAD9B190049E6C9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA5AE6E1EAD9B190049E6C9 /* ViewController.m */; };
+		1AA5AE721EAD9B190049E6C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AA5AE701EAD9B190049E6C9 /* Main.storyboard */; };
+		1AA5AE741EAD9B190049E6C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AA5AE731EAD9B190049E6C9 /* Assets.xcassets */; };
+		1AA5AE771EAD9B190049E6C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AA5AE751EAD9B190049E6C9 /* LaunchScreen.storyboard */; };
+		1AA5AE801EAD9D2F0049E6C9 /* AppDelegate+QQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA5AE7F1EAD9D2F0049E6C9 /* AppDelegate+QQ.m */; };
+		5B9C50723C003D3B3E03CE8E /* libPods-YBThirdLoginTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A78FA0A85C7A3CBF19DEEC89 /* libPods-YBThirdLoginTest.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1AA5AE641EAD9B190049E6C9 /* YBThirdLoginTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YBThirdLoginTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AA5AE681EAD9B190049E6C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1AA5AE6A1EAD9B190049E6C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1AA5AE6B1EAD9B190049E6C9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1AA5AE6D1EAD9B190049E6C9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1AA5AE6E1EAD9B190049E6C9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1AA5AE711EAD9B190049E6C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1AA5AE731EAD9B190049E6C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1AA5AE761EAD9B190049E6C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1AA5AE781EAD9B190049E6C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AA5AE7E1EAD9D2F0049E6C9 /* AppDelegate+QQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+QQ.h"; sourceTree = "<group>"; };
+		1AA5AE7F1EAD9D2F0049E6C9 /* AppDelegate+QQ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+QQ.m"; sourceTree = "<group>"; };
+		7D1A8FFC10A1A64A67FCAD4D /* Pods-YBThirdLoginTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBThirdLoginTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YBThirdLoginTest/Pods-YBThirdLoginTest.debug.xcconfig"; sourceTree = "<group>"; };
+		A78FA0A85C7A3CBF19DEEC89 /* libPods-YBThirdLoginTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YBThirdLoginTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A90B1BA5DFD8BE234049E9D2 /* Pods-YBThirdLoginTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBThirdLoginTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-YBThirdLoginTest/Pods-YBThirdLoginTest.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AA5AE611EAD9B190049E6C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B9C50723C003D3B3E03CE8E /* libPods-YBThirdLoginTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11C0AE5C288036E84B947FA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A78FA0A85C7A3CBF19DEEC89 /* libPods-YBThirdLoginTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1AA5AE5B1EAD9B190049E6C9 = {
+			isa = PBXGroup;
+			children = (
+				1AA5AE661EAD9B190049E6C9 /* YBThirdLoginTest */,
+				1AA5AE651EAD9B190049E6C9 /* Products */,
+				F751ED518B4297A7286903CD /* Pods */,
+				11C0AE5C288036E84B947FA3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1AA5AE651EAD9B190049E6C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AA5AE641EAD9B190049E6C9 /* YBThirdLoginTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AA5AE661EAD9B190049E6C9 /* YBThirdLoginTest */ = {
+			isa = PBXGroup;
+			children = (
+				1AA5AE6A1EAD9B190049E6C9 /* AppDelegate.h */,
+				1AA5AE6B1EAD9B190049E6C9 /* AppDelegate.m */,
+				1AA5AE7E1EAD9D2F0049E6C9 /* AppDelegate+QQ.h */,
+				1AA5AE7F1EAD9D2F0049E6C9 /* AppDelegate+QQ.m */,
+				1AA5AE6D1EAD9B190049E6C9 /* ViewController.h */,
+				1AA5AE6E1EAD9B190049E6C9 /* ViewController.m */,
+				1AA5AE701EAD9B190049E6C9 /* Main.storyboard */,
+				1AA5AE731EAD9B190049E6C9 /* Assets.xcassets */,
+				1AA5AE751EAD9B190049E6C9 /* LaunchScreen.storyboard */,
+				1AA5AE781EAD9B190049E6C9 /* Info.plist */,
+				1AA5AE671EAD9B190049E6C9 /* Supporting Files */,
+			);
+			path = YBThirdLoginTest;
+			sourceTree = "<group>";
+		};
+		1AA5AE671EAD9B190049E6C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AA5AE681EAD9B190049E6C9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F751ED518B4297A7286903CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D1A8FFC10A1A64A67FCAD4D /* Pods-YBThirdLoginTest.debug.xcconfig */,
+				A90B1BA5DFD8BE234049E9D2 /* Pods-YBThirdLoginTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1AA5AE631EAD9B190049E6C9 /* YBThirdLoginTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AA5AE7B1EAD9B190049E6C9 /* Build configuration list for PBXNativeTarget "YBThirdLoginTest" */;
+			buildPhases = (
+				94DB6F5800B8A7A1CFEEDBA7 /* [CP] Check Pods Manifest.lock */,
+				1AA5AE601EAD9B190049E6C9 /* Sources */,
+				1AA5AE611EAD9B190049E6C9 /* Frameworks */,
+				1AA5AE621EAD9B190049E6C9 /* Resources */,
+				152D2856920D51DC217226F8 /* [CP] Embed Pods Frameworks */,
+				F93A2F2F4AB979615BB51222 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YBThirdLoginTest;
+			productName = YBThirdLoginTest;
+			productReference = 1AA5AE641EAD9B190049E6C9 /* YBThirdLoginTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1AA5AE5C1EAD9B190049E6C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "一波";
+				TargetAttributes = {
+					1AA5AE631EAD9B190049E6C9 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 4X428NXEP5;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1AA5AE5F1EAD9B190049E6C9 /* Build configuration list for PBXProject "YBThirdLoginTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1AA5AE5B1EAD9B190049E6C9;
+			productRefGroup = 1AA5AE651EAD9B190049E6C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1AA5AE631EAD9B190049E6C9 /* YBThirdLoginTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1AA5AE621EAD9B190049E6C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AA5AE771EAD9B190049E6C9 /* LaunchScreen.storyboard in Resources */,
+				1AA5AE741EAD9B190049E6C9 /* Assets.xcassets in Resources */,
+				1AA5AE721EAD9B190049E6C9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		152D2856920D51DC217226F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YBThirdLoginTest/Pods-YBThirdLoginTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94DB6F5800B8A7A1CFEEDBA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F93A2F2F4AB979615BB51222 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YBThirdLoginTest/Pods-YBThirdLoginTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AA5AE601EAD9B190049E6C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AA5AE801EAD9D2F0049E6C9 /* AppDelegate+QQ.m in Sources */,
+				1AA5AE6F1EAD9B190049E6C9 /* ViewController.m in Sources */,
+				1AA5AE6C1EAD9B190049E6C9 /* AppDelegate.m in Sources */,
+				1AA5AE691EAD9B190049E6C9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1AA5AE701EAD9B190049E6C9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AA5AE711EAD9B190049E6C9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1AA5AE751EAD9B190049E6C9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AA5AE761EAD9B190049E6C9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1AA5AE791EAD9B190049E6C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1AA5AE7A1EAD9B190049E6C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1AA5AE7C1EAD9B190049E6C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D1A8FFC10A1A64A67FCAD4D /* Pods-YBThirdLoginTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4X428NXEP5;
+				INFOPLIST_FILE = YBThirdLoginTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiahenghealth.YBThirdLoginTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1AA5AE7D1EAD9B190049E6C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A90B1BA5DFD8BE234049E9D2 /* Pods-YBThirdLoginTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4X428NXEP5;
+				INFOPLIST_FILE = YBThirdLoginTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiahenghealth.YBThirdLoginTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AA5AE5F1EAD9B190049E6C9 /* Build configuration list for PBXProject "YBThirdLoginTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AA5AE791EAD9B190049E6C9 /* Debug */,
+				1AA5AE7A1EAD9B190049E6C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AA5AE7B1EAD9B190049E6C9 /* Build configuration list for PBXNativeTarget "YBThirdLoginTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AA5AE7C1EAD9B190049E6C9 /* Debug */,
+				1AA5AE7D1EAD9B190049E6C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1AA5AE5C1EAD9B190049E6C9 /* Project object */;
+}
