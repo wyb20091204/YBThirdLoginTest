@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate+QQ.h"
-
+#define kQQAppID @"1106118074"
 @implementation AppDelegate (QQ)
 
 @end
