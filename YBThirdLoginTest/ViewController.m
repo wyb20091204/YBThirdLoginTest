@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "AppDelegate+ThirdPartLogin.h"
 #import <UIImageView+WebCache.h>
-#import "AppDelegate+QQ.h"
+#import "WeXinUserInfo.h"
 
 @interface ViewController ()<TencentLoginDelegate,TencentSessionDelegate>
 
@@ -27,12 +28,15 @@
 
 @implementation ViewController
 
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-    
-    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setWeChatData:) name:@"WECHAT_LOGIN" object:nil];
     
 }
 
@@ -52,12 +56,6 @@
                                 nil];
         [self.tencentOAuth setAuthShareType:AuthShareType_QQ];
         [self.tencentOAuth authorize:permissions inSafari:NO];
-//
-//    [self.QQheaderImgView sd_setImageWithURL:[NSURL URLWithString:@"http://q.qlogo.cn/qqapp/1106118074/C95E6EC3CE0F908A2F97C57F0BB311C9/100"]];
-//    
-//    self.QQNickNameLabel.text = @"eeeeeee";
-
-    
     
     
 }
@@ -93,8 +91,6 @@
 }
 
 - (void)getUserInfoResponse:(APIResponse*) response {
-
-
     NSString *urlstr = response.jsonResponse[@"figureurl_qq_2"];
     NSString *qqNickName = response.jsonResponse[@"nickname"];
     self.QQNickNameLabel.text = qqNickName;
@@ -103,12 +99,36 @@
 }
 
 
+#pragma mark =======  weiXin ==================
+
 - (IBAction)WeiChartLoginAction:(id)sender {
+    
+    if ([WXApi isWXAppInstalled]) {
+        SendAuthReq *req = [[SendAuthReq alloc]init];
+        req.scope = @"snsapi_userinfo";
+        req.openID = kWeiXinAppKey;
+        req.state = @"1245";
+        [WXApi sendReq:req];
+    }else{
+        //把微信登录的按钮隐藏掉。
+    }
+}
+
+- (void)setWeChatData:(NSNotification *)noti{
+    
+    WeXinUserInfo *userInfo = noti.userInfo[KEYFORUSER];
+    
+    self.WeXinNickNameLabel.text = userInfo.nickname;
+    [self.weiChartHeaderImgView sd_setImageWithURL:[NSURL URLWithString:userInfo.headimgurl]];
+    
 }
 
 
+#pragma mark =======  weibo ==================
 
 - (IBAction)WeiboLoginAction:(id)sender {
+    
+    
 }
 
 
