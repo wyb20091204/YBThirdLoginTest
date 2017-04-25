@@ -34,7 +34,6 @@
 
 -(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options{
     
-    
     if([[url scheme] hasPrefix:@"tencent"]) {
         return [TencentOAuth HandleOpenURL:url];
     } else if([[url scheme] hasPrefix:@"wx"]) {
@@ -43,9 +42,9 @@
         //        return [WeiboSDK handleOpenURL:url delegate:self];
         return YES;
     }
-    
-//    return [WXApi handleOpenURL:url delegate:self];
 }
+
+// 被弃用
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
 //    return [TencentOAuth HandleOpenURL:url];
     if([[url scheme] hasPrefix:@"tencent"]) {
