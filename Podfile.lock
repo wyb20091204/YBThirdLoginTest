@@ -24,17 +24,29 @@ PODS:
     - SDWebImage/Core (= 3.7.1)
   - SDWebImage/Core (3.7.1)
   - WechatOpenSDK (1.7.7)
+  - WeiboSDK (3.1.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.6.0)
   - SDWebImage (= 3.7.1)
   - WechatOpenSDK (~> 1.7.7)
+  - WeiboSDK (from `https://github.com/sinaweibosdk/weibo_ios_sdk.git`)
+
+EXTERNAL SOURCES:
+  WeiboSDK:
+    :git: https://github.com/sinaweibosdk/weibo_ios_sdk.git
+
+CHECKOUT OPTIONS:
+  WeiboSDK:
+    :commit: c7a68c772f11b0d72e57fe7c9cb5236e1eccc4c4
+    :git: https://github.com/sinaweibosdk/weibo_ios_sdk.git
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   SDWebImage: ed3095af2ff88b436426037444979b917f6c5575
   WechatOpenSDK: cbd332148eb792d444ed4eec94f421d98f2046ee
+  WeiboSDK: bceab625ec59b7039ba721cc4ba9f5868804f63e
 
-PODFILE CHECKSUM: ce295876a9c7ab1f4e0f36458f9dfea2765e3084
+PODFILE CHECKSUM: d66f1ef2478225f8cbda45010ad8ab975d4553a4
 
 COCOAPODS: 1.1.1

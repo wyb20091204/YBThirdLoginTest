@@ -20,7 +20,6 @@
 
 -(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url{
     
-    
     if([[url scheme] hasPrefix:@"tencent"]) {
         return [TencentOAuth HandleOpenURL:url];
     } else if([[url scheme] hasPrefix:@"wx"]) {
@@ -172,11 +171,11 @@
         
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        
+        NSLog(@"get user info failure");
     }];
 }
 
-// 一下刷新access_token 暂时不考虑
+// 以下刷新access_token 暂时不考虑
 
 #pragma mark  通过access_token接口获取到的refresh_token进行以下接口调用
 
