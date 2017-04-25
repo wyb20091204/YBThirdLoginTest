@@ -18,9 +18,16 @@
 #import <TencentOpenAPI/TencentOAuth.h>
 #define kQQAppID @"1106118074"
 
+#import <WeiboSDK.h>
+#define kWeiBoAppID @"65135555"
+#define kWeiBoAppKey @"2796573326"
+#define kWeiBoAppSecret @"03897e3fac94addbb10668ad5bd56212"
+#define kWeiBoRedirectURI  @"https://www.sina.com"
 
-@interface AppDelegate (ThirdPartLogin)<WXApiDelegate>
+
+@interface AppDelegate (ThirdPartLogin)<WXApiDelegate,WeiboSDKDelegate>
 
 - (void)registToWeChat;
+- (void)registToWeiBo;
 
 @end

@@ -18,7 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [self registToWeChat];
-    
+    [self registToWeiBo];
     
     // Override point for customization after application launch.
     return YES;

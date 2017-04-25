@@ -17,6 +17,11 @@
     [WXApi registerApp:kWeiXinAppKey];
 }
 
+- (void)registToWeiBo{
+    [WeiboSDK enableDebugMode:YES];
+    [WeiboSDK registerApp:kWeiBoAppKey];
+}
+
 
 -(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url{
     
@@ -25,8 +30,7 @@
     } else if([[url scheme] hasPrefix:@"wx"]) {
         return [WXApi handleOpenURL:url delegate:self];
     } else {
-//        return [WeiboSDK handleOpenURL:url delegate:self];
-        return YES;
+        return [WeiboSDK handleOpenURL:url delegate:self];
     }
     
 }
@@ -38,21 +42,18 @@
     } else if([[url scheme] hasPrefix:@"wx"]) {
         return [WXApi handleOpenURL:url delegate:self];
     } else {
-        //        return [WeiboSDK handleOpenURL:url delegate:self];
-        return YES;
+        return [WeiboSDK handleOpenURL:url delegate:self];
     }
 }
 
-// 被弃用
+// ios 9 以前
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
-//    return [TencentOAuth HandleOpenURL:url];
     if([[url scheme] hasPrefix:@"tencent"]) {
         return [TencentOAuth HandleOpenURL:url];
     } else if([[url scheme] hasPrefix:@"wx"]) {
         return [WXApi handleOpenURL:url delegate:self];
     } else {
-        //        return [WeiboSDK handleOpenURL:url delegate:self];
-        return YES;
+        return [WeiboSDK handleOpenURL:url delegate:self];
     }
 }
 
@@ -204,6 +205,60 @@
         success(NO);
     }];
 }
+
+
+
+
+#pragma mark  -------------  微博部分 ------------------------
+
+
+
+
+- (void)didReceiveWeiboRequest:(WBBaseRequest *)request
+{
+    
+}
+
+- (void)didReceiveWeiboResponse:(WBBaseResponse *)response
+{
+//    if ([response isKindOfClass:WBSendMessageToWeiboResponse.class])
+//    {
+//        NSString *title = NSLocalizedString(@"发送结果", nil);
+//        NSString *message = [NSString stringWithFormat:@"%@: %d\n%@: %@\n%@: %@", NSLocalizedString(@"响应状态", nil), (int)response.statusCode, NSLocalizedString(@"响应UserInfo数据", nil), response.userInfo, NSLocalizedString(@"原请求UserInfo数据", nil),response.requestUserInfo];
+//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
+//                                                        message:message
+//                                                       delegate:nil
+//                                              cancelButtonTitle:NSLocalizedString(@"确定", nil)
+//                                              otherButtonTitles:nil];
+//        WBSendMessageToWeiboResponse* sendMessageToWeiboResponse = (WBSendMessageToWeiboResponse*)response;
+//        NSString* accessToken = [sendMessageToWeiboResponse.authResponse accessToken];
+//        if (accessToken)
+//        {
+//            self.wbtoken = accessToken;
+//        }
+//        NSString* userID = [sendMessageToWeiboResponse.authResponse userID];
+//        if (userID) {
+//            self.wbCurrentUserID = userID;
+//        }
+//        [alert show];
+//    }
+//    else if ([response isKindOfClass:WBAuthorizeResponse.class])
+//    {
+//        NSString *title = NSLocalizedString(@"认证结果", nil);
+//        NSString *message = [NSString stringWithFormat:@"%@: %d\nresponse.userId: %@\nresponse.accessToken: %@\n%@: %@\n%@: %@", NSLocalizedString(@"响应状态", nil), (int)response.statusCode,[(WBAuthorizeResponse *)response userID], [(WBAuthorizeResponse *)response accessToken],  NSLocalizedString(@"响应UserInfo数据", nil), response.userInfo, NSLocalizedString(@"原请求UserInfo数据", nil), response.requestUserInfo];
+//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
+//                                                        message:message
+//                                                       delegate:nil
+//                                              cancelButtonTitle:NSLocalizedString(@"确定", nil)
+//                                              otherButtonTitles:nil];
+//        
+//        self.wbtoken = [(WBAuthorizeResponse *)response accessToken];
+//        self.wbCurrentUserID = [(WBAuthorizeResponse *)response userID];
+//        self.wbRefreshToken = [(WBAuthorizeResponse *)response refreshToken];
+//        [alert show];
+//    }
+}
+
 
 
 
