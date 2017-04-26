@@ -22,10 +22,11 @@
 #define kWeiBoAppID @"65135555"
 #define kWeiBoAppKey @"2796573326"
 #define kWeiBoAppSecret @"03897e3fac94addbb10668ad5bd56212"
-#define kWeiBoRedirectURI  @"https://www.sina.com"
+#define kWeiBoRedirectURI  @"https://api.weibo.com/oauth2/default.html"
 
 
 @interface AppDelegate (ThirdPartLogin)<WXApiDelegate,WeiboSDKDelegate>
+
 
 - (void)registToWeChat;
 - (void)registToWeiBo;

@@ -27,7 +27,7 @@
     if (self = [super init]) {
         self.manager = [AFHTTPRequestOperationManager manager];
         [self.manager.requestSerializer setTimeoutInterval:30];
-        self.manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/plain"];
+        self.manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", @"text/html",@"text/plain",nil];
 //        self.manager.securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeCertificate];
 //        self.manager.securityPolicy.allowInvalidCertificates = YES;
     }

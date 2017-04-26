@@ -10,6 +10,7 @@
 #import "AppDelegate+ThirdPartLogin.h"
 #import <UIImageView+WebCache.h>
 #import "WeXinUserInfo.h"
+#import "WeiBoUserInfo.h"
 
 @interface ViewController ()<TencentLoginDelegate,TencentSessionDelegate>
 
@@ -37,6 +38,7 @@
     [super viewDidLoad];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setWeChatData:) name:@"WECHAT_LOGIN" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setWeiboData:) name:@"WEIBO_LOGIN" object:nil];
     
 }
 
@@ -131,14 +133,23 @@
     WBAuthorizeRequest *request = [WBAuthorizeRequest request];
     request.redirectURI = kWeiBoRedirectURI;
     request.scope = @"all";
-    request.userInfo = @{@"SSO_From": @"SendMessageToWeiboViewController",
-                         @"Other_Info_1": [NSNumber numberWithInt:123],
-                         @"Other_Info_2": @[@"obj1", @"obj2"],
-                         @"Other_Info_3": @{@"key1": @"obj1", @"key2": @"obj2"}};
+//    request.userInfo = @{@"SSO_From": @"SendMessageToWeiboViewController",
+//                         @"Other_Info_1": [NSNumber numberWithInt:123],
+//                         @"Other_Info_2": @[@"obj1", @"obj2"],
+//                         @"Other_Info_3": @{@"key1": @"obj1", @"key2": @"obj2"}};
     [WeiboSDK sendRequest:request];
 }
 
-
+- (void)setWeiboData:(NSNotification *)noti{
+    
+    NSDictionary *data = noti.userInfo[KEYFORUSER];
+    
+    WeiBoUserInfo *wbUser = [[WeiBoUserInfo alloc] init];
+    [wbUser setValuesForKeysWithDictionary:data];
+    self.WeiboNickNameLabel.text = wbUser.name;
+    [self.weiBoHeadeImgView sd_setImageWithURL:[NSURL URLWithString:wbUser.avatar_hd]];
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

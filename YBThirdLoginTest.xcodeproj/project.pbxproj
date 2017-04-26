@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A1C53F41EB02DE400026B70 /* WeiBoUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1C53F31EB02DE400026B70 /* WeiBoUserInfo.m */; };
 		1A5880511EAF1C91001D834A /* AppDelegate+ThirdPartLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5880501EAF1C91001D834A /* AppDelegate+ThirdPartLogin.m */; };
 		1AA5AE691EAD9B190049E6C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA5AE681EAD9B190049E6C9 /* main.m */; };
 		1AA5AE6C1EAD9B190049E6C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA5AE6B1EAD9B190049E6C9 /* AppDelegate.m */; };
@@ -30,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A1C53F21EB02DE400026B70 /* WeiBoUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiBoUserInfo.h; sourceTree = "<group>"; };
+		1A1C53F31EB02DE400026B70 /* WeiBoUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiBoUserInfo.m; sourceTree = "<group>"; };
 		1A58804F1EAF1C91001D834A /* AppDelegate+ThirdPartLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+ThirdPartLogin.h"; sourceTree = "<group>"; };
 		1A5880501EAF1C91001D834A /* AppDelegate+ThirdPartLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+ThirdPartLogin.m"; sourceTree = "<group>"; };
 		1AA5AE641EAD9B190049E6C9 /* YBThirdLoginTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YBThirdLoginTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +131,8 @@
 				1AA5AE6E1EAD9B190049E6C9 /* ViewController.m */,
 				1AADE99B1EAEEA2700362A21 /* WeXinUserInfo.h */,
 				1AADE99C1EAEEA2700362A21 /* WeXinUserInfo.m */,
+				1A1C53F21EB02DE400026B70 /* WeiBoUserInfo.h */,
+				1A1C53F31EB02DE400026B70 /* WeiBoUserInfo.m */,
 				1AF1BFF71EADF681003DDB1D /* NetWork.h */,
 				1AF1BFF81EADF681003DDB1D /* NetWork.m */,
 				1AA5AE701EAD9B190049E6C9 /* Main.storyboard */,
@@ -292,6 +297,7 @@
 				1AADE99D1EAEEA2700362A21 /* WeXinUserInfo.m in Sources */,
 				1A5880511EAF1C91001D834A /* AppDelegate+ThirdPartLogin.m in Sources */,
 				1AA5AE6F1EAD9B190049E6C9 /* ViewController.m in Sources */,
+				1A1C53F41EB02DE400026B70 /* WeiBoUserInfo.m in Sources */,
 				1AA5AE6C1EAD9B190049E6C9 /* AppDelegate.m in Sources */,
 				1AF1BFF91EADF681003DDB1D /* NetWork.m in Sources */,
 				1AA5AE691EAD9B190049E6C9 /* main.m in Sources */,
