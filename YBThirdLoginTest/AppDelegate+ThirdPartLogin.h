@@ -8,9 +8,6 @@
 
 #import "AppDelegate.h"
 
-
-
-
 #import <WXApi.h>
 #define kWeiXinAppKey @"wx539fba18a39b78e1"
 #define kWeiXinAppSecret @"eed6f0dc893c750c5d1022c2d2c0916d"
