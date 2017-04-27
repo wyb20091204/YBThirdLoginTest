@@ -11,7 +11,7 @@
 @implementation WeiBoUserInfo
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key{
     if ([key isEqualToString:@"id"]) {
-        _wbUserID = (NSInteger)value;
+        _wbUserID = [value integerValue];
     }
     if ([key isEqualToString:@"description"]) {
         _Userdescription = value;
