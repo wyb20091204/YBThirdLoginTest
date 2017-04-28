@@ -59,4 +59,53 @@
         }
     }];
 }
+
+- (void)uploadImage:(id)image
+                key:(NSString*)key
+              token:(NSString*)token
+         uploadBase:(NSString*)uploadBase
+            success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
+            failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure{
+    NSData *imageData = UIImageJPEGRepresentation(image, 1);
+    NSString *URLString = uploadBase;
+    
+    NSMutableURLRequest *request = [self.manager.requestSerializer multipartFormRequestWithMethod:@"POST" URLString:URLString parameters:@{@"key":key, @"token":token}  constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+        [formData appendPartWithFileData:imageData name:@"file" fileName:@"tmp.jpg" mimeType:@"image/jpeg"];
+    } error:nil];
+    AFHTTPRequestOperation *op = [[AFHTTPRequestOperation alloc] initWithRequest:request];
+    [op setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+        if (success) {
+            success(operation, operation.responseString);
+        }
+    } failure:failure];
+    [op start];
+}
+
+-(void) applyImageUpload:(int)type target_id:(int)tid success:(void (^)(NSString* key, NSString* token, NSString* uploadBase, NSString* imageBase))success failure:(void (^)(NSError* err))failure{
+    NSLog(@"apply image upload for: %d, id:%d ", type, tid);
+    
+    NSString *URLString = [NSString stringWithFormat:@"http://gymdev.jiahenghealth.com/imgs/applyUpload"];
+    NSDictionary* param = @{@"type":@(type), @"target_id":@(tid)};
+    [self POST:URLString parameters:param success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSDictionary *data = responseObject[@"result"][@"data"];
+        NSLog(@"response data: %@", data);
+        if(data!=nil){
+            NSString* key = (NSString*) [data valueForKey:@"key"];
+            NSString* token = (NSString*) [data valueForKey:@"token"];
+            NSString* uploadBase = (NSString*) [data valueForKey:@"uploadBase"];
+            NSString* imageBase = (NSString*) [data valueForKey:@"imageBase"];
+            if(success){
+                success(key, token, uploadBase, imageBase);
+            }
+        }else{
+//            failure(500);// net work accsess full
+            NSLog(@"网络请求错误");
+            
+        }
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+//        [operation.responseObject[@"result"][@"status"] integerValue]
+        failure(error);
+    }];
+}
+
 @end
