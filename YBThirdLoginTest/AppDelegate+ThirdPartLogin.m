@@ -147,6 +147,12 @@
         //        NSString *scope         = responseObject[@"scope"];
         
         
+
+        
+        
+        
+        
+        
         [self getUserInfoWithAccess_token:access_token openid:openid];
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -256,6 +262,16 @@
         
         [self getWeiboUserInfoWithUid:wbCurrentUserID access_token:wbtoken];
         
+//        NSString *URLS = @"https://api.weibo.com/oauth2/get_token_info";
+//        NSDictionary *param = @{@"access_token":wbtoken};
+//        [[NetWork network] POST:URLS parameters:param success:^(AFHTTPRequestOperation *operation, id responseObject) {
+//            
+//            NSLog(@"剩余时间%@",responseObject);
+//            
+//        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+//            
+//        }];
+        
 
         
 
@@ -272,7 +288,6 @@
         
         NSLog(@" %@ ",responseObject);
         [[NSNotificationCenter defaultCenter] postNotificationName:@"WEIBO_LOGIN" object:nil userInfo:@{KEYFORUSER:responseObject}];
-        
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@",error.localizedDescription);

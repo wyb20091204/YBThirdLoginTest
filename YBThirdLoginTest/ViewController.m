@@ -11,6 +11,7 @@
 #import <UIImageView+WebCache.h>
 #import "WeXinUserInfo.h"
 #import "WeiBoUserInfo.h"
+#import "NetWork.h"
 
 @interface ViewController ()<TencentLoginDelegate,TencentSessionDelegate>
 
@@ -65,13 +66,32 @@
 - (void)tencentDidLogin
 {
     if (_tencentOAuth.accessToken.length > 0) {
-        // 获取用户信息
-        [_tencentOAuth getUserInfo];
+        // 获取用户信息 调用getUserInfoResponse:(APIResponse*) response 方法
+//        [_tencentOAuth getUserInfo];
         NSLog(@"登录成功\n  openID :%@  token:%@ ",_tencentOAuth.openId,_tencentOAuth.accessToken);
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"登录成功"
                                                         message:nil
                                                        delegate:self cancelButtonTitle:@"我知道啦" otherButtonTitles: nil];
-        [alert show];
+        
+        NSString *urlStr = [NSString stringWithFormat:@"https://graph.qq.com/user/get_user_info?access_token=%@&oauth_consumer_key=%@&openid=%@&format=json",_tencentOAuth.accessToken,kQQAppID,_tencentOAuth.openId];
+        
+        [[NetWork network] GET:urlStr parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+            NSLog(@"responseObject = %@",responseObject);
+            NSString *urlstr = responseObject[@"figureurl_qq_2"];
+            if ([urlStr isKindOfClass:[NSString class]] && urlStr.length != 0) {
+                [self.QQheaderImgView sd_setImageWithURL:[NSURL URLWithString:urlstr]];
+            }else{
+                NSString *urlstr = responseObject[@"figureurl_qq_1"];
+                [self.QQheaderImgView sd_setImageWithURL:[NSURL URLWithString:urlstr]];
+            }
+            NSString *qqNickName = responseObject[@"nickname"];
+            self.QQNickNameLabel.text = qqNickName;
+        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+            
+        }];
+        
+        
+//        [alert show];
         
         
     } else {
